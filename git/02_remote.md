@@ -41,3 +41,6 @@ To https://github.com/kodonghee/first.git
 ```
 
 * origin 원격저장소로 push
+* 로컬 -> github 로 버전을 올린다는 의미 (구글 드라이브에 업로드 x)
+* github에 올라와 있는 모습은 가장 최신 버전의 상태
+* 각 파일 옆 메시지는 가장 최근 commit을 나타낸 것임
