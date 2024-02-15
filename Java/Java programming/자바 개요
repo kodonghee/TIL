@@ -1,0 +1,8 @@
+Java 개요
+  1. IntelliJ 설치
+    - MacOS 환경 & M1 맥북이라면 Apple Silicon 버전을 다운로드
+    - SDK 설정
+  2. Debug
+    - Step over: 해당 코드의 다음 단계로 이동
+    - Step into: 해당 코드의 뒷단으로 이동 
+    - Step out: 뒷단에서 빠져나옴
