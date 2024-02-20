@@ -1,0 +1,19 @@
+### Spring Boot
+
+* Spring Boot
+	- 빌드 도구: Gradle, Maven
+		- 빌드: 프로젝트가 실행될 수 있게 실행 직전까지 만들어주는 과정
+		- ant > maven > gradle (더 빠르고 간결함)
+	- 빌드 도구와 소통하는 언어: Groovy, Kotlin
+	- 버전
+		- jdk 17 이상 -> 3
+		- jdk 17 미만 -> 2
+	- Metadata
+		- 직접 구현하는 파일들 말고 그 외의 것들
+		- 패키지명, 압축 방식, jdk 버전
+		- 압축 방식
+			- Jar: 서버 포함하여 압축 (편함)
+			- War: 서버 제외하고 압축
+	- Dependency (사용)
+		- ex) A 객체 의존
+		- Spring Web 선택
