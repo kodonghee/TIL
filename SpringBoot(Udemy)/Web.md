@@ -8,6 +8,8 @@
 	- 지구상의 모든 사람들이 지나갈 수 있는 공간 (주소)
 	- info.cern.ch: html 로 이루어진 사이트 (웹의 시초)
 		- html: hyper text markup language
-* HTTP
+* HTTP (Hyper Text Transfer Protocol)
 	- 인터넷 안에서 웹 공간을 찾아가기 위한 용도
 	- EX) https://www.naver.com
+	- Hyper Text 를 전송할 때 쓰는 약속
+	- S: Secure (보안)
