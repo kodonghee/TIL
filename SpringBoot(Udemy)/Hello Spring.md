@@ -21,6 +21,6 @@
 	- 설정을 쉽게 할 수 있게 만들어진 것이 Spring Boot
 	- Spring을 사용하기 위해서 Spring Boot 이용
 		- 로직에 집중할 수 있게 해줌
-		- Spring Boot에 웹 서버 + 웹 어플리케이션 서버가 포함
+		- Spring Boot에 웹 서버 + 웹 어플리케이션 서버가 포함 (WEB + WAS)
 			- 서버: 가상의 공간
 			- Spring에서는 서버 따로 설치해야 함 	
