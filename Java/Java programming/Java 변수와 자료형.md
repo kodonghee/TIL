@@ -67,3 +67,7 @@ int one_apple_price = 1000;
     - 정수 / 실수 / 2진수, 8진수, 16진수
     - 정수: int, long
     - 실수: float, double
+- 자료형 - 부울 (Boolean)
+  - 참과 거짓을 나타내는 자료형
+- 자료형 - 문자 (Character)
+  - 한 개의 문자 표현에 사용하는 자료형
