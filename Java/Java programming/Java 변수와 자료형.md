@@ -57,3 +57,13 @@ int OneApplePrice = 1000;
 int my_age = 10;
 int one_apple_price = 1000;
 ```
+
+##### :laughing: 자료형 (Data Type)
+- 변수의 종류, 단위
+  - 숫자, 부울, 문자, 문자열
+- 변수의 종류에 따라 담을 수 있는 데이터의 타입과 크기가 다름
+- 자료형 - 숫자 (Number)
+  - 숫자 형태의 자료형
+    - 정수 / 실수 / 2진수, 8진수, 16진수
+    - 정수: int, long
+    - 실수: float, double
