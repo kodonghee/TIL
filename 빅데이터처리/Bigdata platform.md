@@ -59,8 +59,8 @@
   - 스트림 처리 (실시간): Flink, Spark, Kafka
     - 잘못된 결과를 수정하기 어려움
     - 지연된 데이터를 처리하기 어려움
-  - Lambda vs Kappa Architecture
- <img width="631" alt="image" src="https://github.com/user-attachments/assets/8e06053c-3482-4e7e-b84b-0eb4287aad14" />
+    - Lambda vs Kappa Architecture
+    - <img width="631" alt="image" src="https://github.com/user-attachments/assets/8e06053c-3482-4e7e-b84b-0eb4287aad14" />
 
 #### Storage: 쿼리와 프로세싱이 가능한 형태로 데이터를 저장하는 단계
 #### Analytics: 데이터 탐색 및 분석
