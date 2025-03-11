@@ -40,6 +40,7 @@
   - 파일
   - 오브젝트 스토리지
   - 기타
+ 
 #### Ingestion and Transformation: 수집과 처리 단계 (데이터 수집, 변형, 적재) = ETL
 - 배치형 데이터 수집: 이미 어딘가에 존재하는 데이터를 정리해서 추출, workflow management 도움 필요
   - 데이터베이스
@@ -61,11 +62,37 @@
     - 지연된 데이터를 처리하기 어려움
     - Lambda vs Kappa Architecture
     - <img width="631" alt="image" src="https://github.com/user-attachments/assets/8e06053c-3482-4e7e-b84b-0eb4287aad14" />
-
+      - Kappa Architecture 에서는 메세지 브로커가 다양한 기능을 제공해 주어야 함
+        
 #### Storage: 쿼리와 프로세싱이 가능한 형태로 데이터를 저장하는 단계
+- Data Warehouse: 데이터 분석을 위해 서로 다른 시스템의 데이터가 모델링이 되어있는 데이터베이스
+  - 정형화된 데이터
+  - 리포팅이나 분석 쿼리에 최적화
+  - 클라우드 기반의 DW 많이 사용하는 추세 - Google BigQuery, amazon REDSHIFT, snowflake
+- Data Lake: 데이터를 raw 형태로 저장 (원천 그대로)
+  - 스트리밍 데이터, 비정형 데이터 등 다양한 종류의 데이터 저장
+  - Parquet, ORC 포맷으로 Object Storage(S3나 HDFS)에 저장됨
+  - 기존 data lake의 문제점: 트랜잭션 지원 불가, 데이터 update/delete 불가
+  - 기존의 object storage에 다른 storage layer을 둬서 ACID, Upsert 기능 제공 - Apache Hudi, Delta Lake, Iceberg
+  - Data Lakehouse: 더 발전된 data lake
+- Nosql Database
+  
 #### Analytics: 데이터 탐색 및 분석
+- 데이터 기반의 의사결정 가능, 머신러닝을 포함한 데이터 기반의 애플리케이션 구동 가능
+- 대화형 쿼리 엔진 - trino, impala, presto
+  - trino: 중간 결과를 disk가 아닌 메모리에 저장하여 처리, 빠름
+- 실시간 분석 OLAP 데이터베이스 - Apache Druid, Pinot, Clickhouse
+- 머신 러닝 - Apache spark, Amazon SageMaker, Azure Machine Learning
+  
 #### Output: 데이터 분석 결과를 보여주는 단계 (대시보드 리포팅, 애플리케이션 탑재)
+- 목적
+  - 데이터 기반 의사 결정
+    - 비즈니스 의사 결정 도와주기
+  - 데이터 기반 애플리케이션
+    - 데이터의 도움을 받아 프로덕트를 향상시킴
+- 시각화 툴 - Apache Superset, Redash, Tableau
+  
 #### Workflow Management: 데이터 파이프라인 작업에 대한 오케스트레이션 및 스케줄링, 워크플로우들을 관리하는 툴
-
-## 파이프라인: 설계 도면을 보고 각각을 어떻게 연결하고 구성할지 결정하는 것
-
+- 정기적으로 Task를 실행하고 비정상적인 상태 감지 후 해결
+- 오케스트레이션 프레임워크
+- Apache Airflow, Luigi, Apache oozie, Azkaban
