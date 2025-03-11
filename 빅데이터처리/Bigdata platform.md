@@ -62,7 +62,7 @@
     - 지연된 데이터를 처리하기 어려움
     - Lambda vs Kappa Architecture
     - <img width="631" alt="image" src="https://github.com/user-attachments/assets/8e06053c-3482-4e7e-b84b-0eb4287aad14" />
-      - Kappa Architecture 에서는 메세지 브로커가 다양한 기능을 제공해 주어야 함
+       - Kappa Architecture 에서는 메세지 브로커가 다양한 기능을 제공해 주어야 함
         
 #### Storage: 쿼리와 프로세싱이 가능한 형태로 데이터를 저장하는 단계
 - Data Warehouse: 데이터 분석을 위해 서로 다른 시스템의 데이터가 모델링이 되어있는 데이터베이스
