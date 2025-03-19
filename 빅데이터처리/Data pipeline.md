@@ -47,6 +47,8 @@
 ##### ETL = Extract(추출) - Transform(변환) - Load(적재)
 
 ##### ELT = Extract(추출) - Load(적재) - Transform(변환)
+###### 1. Extract - Load: 데이터 엔지니어
+###### 2. Transform: 데이터 분석가 또는 과학자
 
 - ETL → ELT
   - 데이터가 커지고 다양해지면서 ETL 과정이 굉장히 복잡해지는 문제 발생
